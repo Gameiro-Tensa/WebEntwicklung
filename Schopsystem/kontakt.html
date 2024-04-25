@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <title>TeamShape - Schicke Tibo Inshape deine persönliche Nachricht</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Tibo Inshape, Fitness, Kontakt, FanMail">
+        <meta name="description" content="Tibo Inshape | Schicke Tibo deine persönliche Nachricht | FanMail | Fitness und Sport">
+
+        <link rel="stylesheet" type ="text/css" href="style.css">
+        <!-- fontawesome fuer ein paar icons(socials medien) und logo wie die Uhr-->
+        <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" id="check">
+            <nav>
+                <div class="logo"><a href="index.html">Team<span class ="log">S</span>hape</a></div>
+            
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="frau.html">Frauen</a></li>
+                    <li><a href="mann.html">Männer</a></li>
+                    <li><a href="login.html" class="einlog">Einloggen</a></li>
+                </ul>
+                
+                <label for="check" class="bar">
+                    <span class="fa fa-bars" id="bars"></span>
+                    <span class="fa fa-times" id="times"></span>
+                </label>
+                <div class="korb">
+                    <a href="warenkorb.html"><i class='bx bx-shopping-bag' id="korb-icon"></i></a>
+                </div>
+            </nav>
+        </header>
+        
+        <section class="contact-section"> 
+            <div class="kontakt-info">
+                <div class="kon">
+                    <ul>
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <p><span>Goethe straße 42<br>Worms, PZL 67547<br>DE</span></p>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <p><a href="mailto:shape@gmail.com">shape@gmail.com</a></p>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <p><a href="tel:+4900000000">+4900000000</a></p>
+                        </li>
+                       <li>
+                           <span><i class="fas fa-clock"></i></span>
+                           <p>Mon-Fr 8:00-17:30 </p>
+                       </li>
+                    </ul>
+                </div>
+                <form id="form1">
+                    <h1>Nachricht senden</h1>
+                    <div>
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="nachricht">Nachricht</label><br>
+                        <textarea name="nachricht" id="nachricht"></textarea>
+                    </div>
+                    <div id="button-row">
+                        <div class="button">
+                            <button type="submit" onclick="getAlert();" id="send">Senden</button>
+                        </div>
+                        <div class="button">
+                            <button id="reset">löschen</button>
+                        </div>  
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <h4>social medien</h4>
+                    <ul class="socials">
+                        <li><a href="https://fr-fr.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://accounts.google.com/ServiceLogin"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="https://de.linkedin.com/company/login"><i class="fa fa-linkedin-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-info">
+                    <h4>Contacts & Information</h4>
+                    <ul>
+                        <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="info.html">Information</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </footer>
+        <script src="contact.js"></script>
+    </body>
+</html>

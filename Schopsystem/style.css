@@ -1,0 +1,1052 @@
+/*standard Daten*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    display:grid;
+    grid-template-areas: 
+        "header header header header"
+        "section section section section"
+        "section section section section"
+        "section section section section"
+        "footer footer footer footer";
+    grid-gap: 5px;    
+    height: 100%;
+}
+
+header {
+    grid-area: header;
+    background-color:grey;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+  
+}
+section {
+    grid-area: section;
+    background: radial-gradient(#fff, #eaf2fb) ;
+    padding: 30px;
+    width: 100%;
+    margin-top: -5px;
+}
+footer {
+    grid-area: footer;
+    background-color: #696969;
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+}
+nav {
+    display:flex;
+    width: 100%;
+    background: #0a5071;
+    position: relative;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px;
+}
+nav .logo{
+    font-size: 32px;
+    font-weight: 800;
+    color: #fff;
+    cursor: pointer;
+}
+nav .logo a{
+    color:hotpink;
+}
+.log{
+    color:green;
+}
+nav ul{
+    display:flex;
+    list-style: none;
+    margin: auto 0;
+}
+nav ul li{
+    margin: 0 2px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    
+}
+nav ul li:hover a{
+    background: #fff;
+    color: #0a5071;
+}
+nav .bar{
+    position:relative;
+    margin: auto;
+    display: none;
+}
+nav .bar span{
+    position: absolute;
+    color:#fff;
+    font-size: 34px;
+}
+.einlog{
+    font-style: italic;
+}
+/*Warenkorb*/
+#korb-icon{
+    font-size: 24px;
+    cursor: pointer;
+    color:#fff;
+}
+
+.korb-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+.gesamt {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    border-top: 1px solid #ff057f;
+}
+.gesamt-preis{
+    margin-left: 8px;
+}
+
+/*button input*/
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.inhalt .detail-box{
+    display: flex;
+    flex-direction: row;
+}
+.inhalt .product-img{
+    width:50%;
+    height: auto;
+}
+
+/*section-shop mann Seite*/
+.shop{
+    margin-top: 5px;
+}
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    font-family:monospace;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.shop-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:15px;
+}
+.produkt_box:hover{
+    padding: 1px;
+    border: 1px solid linen;
+    transition: 0.4s;
+}
+.product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5px;
+    cursor: pointer;
+}
+.produkt-title{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5px;
+}
+.price{
+    font-weight: 500;
+    color: mediumvioletred;
+}
+.produkt_box .add-cart{
+    margin-left: 180px;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+}
+.add-cart:hover{
+    background: midnightblue;
+}
+
+
+/*end mann seite*/
+
+/* css footer*/
+footer .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr ;
+}
+.container .footer-content{
+    display: grid;
+    grid-column: 4;
+    grid-row: 1;
+    margin: 20px;
+    padding: 10px;
+}
+.container h4{
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.footer-content ul {
+    display: inline-flex;   
+}
+.footer-content ul li {
+    font-size: 22px;
+}
+footer ul li {
+    padding: 8px;
+}
+footer .footer-info{
+    display: grid;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 20px;
+    padding: 10px;
+}
+.footer-info ul{
+    display: block;
+}
+.footer-info ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color:#fff;
+}
+footer li:hover a{
+    background-color: white;
+    color: blue;
+}
+
+/*Kontakt seite*/
+
+.contact-section{
+    background-color: lightskyblue;
+    
+}
+.kontakt-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    margin-top: 3px;
+
+}
+.kontakt-info .kon{
+    padding: 15 30px;
+    font-size: 18px;
+    margin-bottom: 13px;
+}
+.kontakt-info .kon li{
+    padding: 7px;
+}
+.kontakt-info form{
+    background: #000;
+    width: 400px;
+    border-radius: 25px;
+    height: 300px;
+    padding: 25px;
+    box-shadow: 5px 5px 5px 5px lightseagreen;
+}
+.kontakt-info form h1{
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+}
+.kontakt-info label{
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 12px;
+    display: inline-block;
+}
+.kontakt-info input,textarea {
+    width: 80%;
+    height: 25px;
+    padding: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    resize:none;
+}
+.kontakt-info textarea{
+    height: 50px;
+}
+#button-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    flex-grow: 1;
+    width: 95px;
+    margin: 15px;
+    border:none;
+    outline:none;
+    border-radius: 10px;
+    height: 25px;
+    cursor: pointer;
+    color: #fff;
+}
+button#send{
+    background: #ff057f;
+}
+button#reset{
+    background: #707c05;
+}
+
+/*... kontakt ...*/
+/* start login seite*/
+.login-section{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: radial-gradient(#fff, lightseagreen) ;
+}
+.login-container{
+    position: relative;
+    max-width: 850px;
+    width: 100%;
+    background: #fff;
+    padding: 40 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    perspective: 2700px;
+}
+.login-container .cover{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    z-index: 98;
+    transition: all 1s ease;
+    transform-origin: left;
+    transform-style: preserve-3d;
+}
+.login-container .cover::before{
+    content: '';
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background: lightseagreen;
+    opacity: 0.5;
+    z-index: 100;
+}
+.login-container #flip:checked ~ .cover{
+    transform:rotateY(-180deg);
+}
+.login-container .cover img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 12;
+    backface-visibility: hidden;
+}
+
+.login-container .form{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+.login-container .form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px;
+}
+.form-content .login-form,
+.form-content .signup-form{
+    width: calc(100% / 2 - 25px);
+}
+form .form-content .title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+form .form-content .title:before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background:lightseagreen ;
+}
+form .signup-form .title:before{
+    width: 20px;
+}
+form .form-content .input-boxes{
+    margin-top: 30px;
+}
+form .form-content .input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width:100%;
+    margin: 10 0px;
+    position: relative;
+}
+.form-content .input-box input{
+    height: 100%;
+    width: 100%;
+    border:none;
+    outline:none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+.form-content .input-box input:focus
+.form-content .input-box input:valid{
+    border-color: lightseagreen;
+}
+.form-content .input-box i{
+    position:absolute;
+    color:lightseagreen;
+    font-size: 17px;
+}
+form .form-content .text{
+    font-size: 14px;
+    font-weight: 500;
+    color:#333;
+}
+form .form-content .text a{
+    text-decoration: none;
+}
+form .form-content .text a:hover{
+    text-decoration: underline;
+}
+form .form-content .button{
+    color:#fff;
+    margin-top: 30px;
+}
+form .form-content .button input{
+    color:#fff;
+    background: lightseagreen;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+form .form-content .button input:hover{
+    background: lightgreen;
+}
+form .form-content label{
+    color:lightseagreen;
+}
+form .form-content label:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#hide1{
+    display: none;
+    cursor: pointer;
+}
+#hide2{
+    cursor: pointer;
+}
+/* end login seite*/
+/*home page*/
+.images{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.images .gallery{
+    padding: 10px;
+    margin: 10px;
+    height: 400px;
+    width: 100%;
+}
+img{
+    height: 80%;
+    width: 100%;
+}
+.gallery{
+    transition: transform 0.5s;
+    
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 3px lightseagreen;
+}
+.gallery:hover{
+    border:2px solid lightsteelblue;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.moi{
+    text-align: center;
+    border:1px solid lightcyan;
+    background: grey;
+    height: 35px;
+    width: 200px;
+    border-radius: 6px;
+    display: inline-block;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+.gallery .desc {
+    font-weight: 600;
+    text-align: center;
+}
+.gallery .link {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#fff;
+}
+.gallery .moi{
+    visibility: hidden;
+}
+.gallery:hover .moi{
+    visibility: visible; 
+}
+
+/*css info-page*/
+.info{
+    width:100%;
+    background: rgb(25,12,41);
+}
+.tibo-title{
+    text-align: center;
+    color:#fff
+}
+.info .bio {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+.info .imp {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.info .imp .video{
+    height: auto;
+    width: 500px;
+}
+.info .imp .video video{
+    width: 400px;
+}
+.slider{
+    width: 25%;
+    overflow: hidden;
+}
+.tibo-images{
+    display: flex;
+    width: 100%;
+    margin: 5px;
+    height: auto;
+}
+.tibo-images img{
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.tibo-images input{
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover{
+    background: #fff;
+}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+
+/*Passwort zurücksetzen*/
+
+.pwd{
+    display: inline-block; 
+    width: 60%;
+    margin: 10px;
+    margin-left: 40px
+}
+.pwd h1 {
+    margin: 16px;
+}
+.pwd-text{
+    border-radius: none;
+    height: 50px;
+    margin:16px;
+    font-size: 18px;
+}
+.pwd-email{
+    height: 50px;
+    margin: 16px;
+    border: 0;
+    border-bottom: 1px solid #000;
+}
+.pwd-email input {
+    border:none;
+    outline: none;
+    border-radius: 4px;
+    width: 100%;
+    height: 100%;
+}
+.pwd-sub{
+    height: 50px;
+    margin: 16px;
+    text-align: center;
+    
+}
+.pwd-sub input{
+    margin-top: 12px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    color: #fff;
+    background: #000;
+    border-radius: 3px;
+    transition: all 0.5s ease;
+}
+.pwd-sub input:hover {
+    background: #333;
+}
+.pwd-zuruck{
+    font-size: 16px;
+    color: #000;
+    margin: 16px;
+}
+/*warenkorb*/
+.wkorb{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 150px;
+}
+.wkorb .knopf-kaufen{
+    font-size: 16px;
+    color: #ff057f;
+    background: #000;
+}
+.wkorb button{
+    height: 50px;
+    width: 100px;
+}
+@media screen and (max-width: 1020px) {
+    nav{
+        display: block;
+        padding: 0;
+    }
+    nav .logo{
+        display: inline-block;
+        padding:15px 30px;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        background: darkgray;
+        height: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+    nav ul li{
+        text-align: center;
+    }
+    nav ul li a{
+        color:#000;
+        font-size: 26px;
+        padding: 20px;
+        display: block;
+    }
+    nav .bar{
+        display:block;
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        cursor: pointer;
+    }
+    nav .bar #times{
+        display: none;   
+    }
+    #check:checked ~ nav .bar #times{
+        display: block;
+    }
+    #check:checked ~ nav .bar #bars{
+        display: none;
+    }
+    #check:checked ~ nav ul{
+        visibility: visible;
+        height:400px ;
+        margin-bottom: 15px;
+    }
+    #korb-icon{
+        font-size: 40px;
+    }
+    /*section-kontakt*/
+    .kontakt-info{
+        flex-direction: column;
+    }
+    .kon .contact-form{
+        margin: 30 50px;
+    }
+
+    /* login seite*/
+    .login-container .cover{
+        display: none;
+    }
+    .form-content .login-form,
+    .form-content .signup-form{
+        width: 70%;
+    }
+    .form-content .signup-form{
+        display: none;
+    }
+    .login-container #flip:checked ~ form .signup-form{
+        display: block;
+    }
+    .login-container #flip:checked ~ form .login-form{
+        display: none;
+    }
+    /*index*/
+    section{
+        display: block;
+    }
+    .images{
+        flex-direction: row;
+    }
+    .images .gallery{
+        width: 100%;
+    }
+    .gallery .moi{
+        visibility: visible;
+    }
+     /*shop*/
+     .shop-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap:15px;
+    }
+    /*Seite zum Zurücksetzen des Passwort*/
+    section .pwd{
+        display: inline-block;
+        margin: 0;
+        width: 100%;
+       
+    }
+    section .pwd-email{
+        margin-top: 15px;
+    }
+    /*footer*/
+    footer .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+/*mitlerer Bildschirm*/
+@media only screen and (max-width: 720px){
+    
+    nav{
+        display: block;
+        padding: 0;
+    }
+    nav .logo{
+        display: inline-block;
+        padding:10px 20px;
+    }
+   
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        background: darkgray;
+        height: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+    nav ul li{
+        text-align: center;
+    }
+    nav ul li a{
+        color:#000;
+        font-size: 26px;
+        padding: 20px;
+        display: block;
+    }
+    nav .bar{
+        display:block;
+        position: absolute;
+        top: 20px;
+        right: 80px;
+        cursor: pointer;
+    }
+    nav .bar #times{
+        display: none;   
+    }
+    #check:checked ~ nav .bar #times{
+        display: block;
+    }
+    #check:checked ~ nav .bar #bars{
+        display: none;
+    }
+    #check:checked ~ nav ul{
+        visibility: visible;
+        height:365px ;
+    }
+    #korb-icon{
+        font-size: 40px;
+    }
+    /*shop*/
+    .shop-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:15px;
+    }
+    /*login*/
+    .login-container .cover{
+        display: none;
+    }
+    .form-content{
+        flex-direction: column;
+    }
+    .form-content .login-form,
+    .form-content .signup-form{
+        width: 100%;
+    }
+    .form-content .signup-form{
+        display: none;
+    }
+    .login-container #flip:checked ~ form .signup-form{
+        display: block;
+    }
+    .login-container #flip:checked ~ form .login-form{
+        display: none;
+    }
+    /*index*/
+    .images{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .gallery {
+        width:100%;
+    }
+    .gallery .moi{
+        visibility: visible;
+    }
+    /*info*/
+    .imp{
+        flex-direction: column;
+    }
+    .slider{
+        width: 50%;
+    }
+    /*footer*/
+    .container{
+        flex-direction: column-reverse;
+    }
+}
+/*klein Bilschirm*/
+@media only screen and (max-width: 375px) { 
+    nav{
+        display: block;
+        padding: 0;
+        width: 100%;
+    }
+    nav .logo{
+        display: block;
+        left: 0;
+        padding:5px 10px;
+        font-size: 32px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        background: darkgray;
+        height: 0;
+        visibility: hidden;
+        transition: 0.3s;
+    }
+    nav ul li{
+        text-align: center;
+    }
+    nav ul li a{
+        color:#000;
+        font-size: 26px;
+        padding: 20px;
+        display: block;
+    }
+    nav .bar{
+        display:block;
+        position: absolute;
+        top: 40px;
+        right: 60px;
+        cursor: pointer;
+    }
+    nav .bar #times{
+        display: none;   
+    }
+    #check:checked ~ nav .bar #times{
+        display: block;
+    }
+    #check:checked ~ nav .bar #bars{
+        display: none;
+    }
+    #check:checked ~ nav ul{
+        visibility: visible;
+        height:305px ;
+    }
+    #korb-icon{
+        font-size: 50px;
+    }
+    /**/
+    section h1{
+        text-align: center;
+    }
+    .images{
+        display: block;
+        width: 100%;
+    }
+    .gallery{
+        width: 100%;
+    }
+
+    .gallery .moi{
+        visibility: visible;
+    }
+    /*info-seite*/
+    
+    .imp{
+        flex-direction: column;
+    }
+    .slider{
+        width: 50%;
+    }
+    .slider{
+        margin-top: 10px;
+        width: 50%;
+    }
+    .tibo-images{
+        width: 100%;
+    }
+    .tibo-images img{
+        width: 100%;
+        height: 200px;
+    }
+    .info .video{
+        margin-top: 15px;
+    }
+    .bio{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    
+     /* login seite*/
+     .login-container .cover{
+        display: none;
+    }
+    .form-content{
+        display: block;
+    }
+    .form-content .login-form,
+    .form-content .signup-form{
+        width: 100%;
+    }
+    .form-content .signup-form{
+        display: none;
+    }
+    .login-container #flip:checked ~ form .signup-form{
+        display: block;
+    }
+    .login-container #flip:checked ~ form .login-form{
+        display: none;
+    }
+    /*section-kontakt*/
+    .kontakt-info{
+        display: block;
+        flex-direction: column;
+        margin: 5px;
+    }
+    #form1{
+        margin-top: 10px;
+    }
+    .kon ul li {
+        font-size: 22px;
+    }
+    /*mann.html*/
+    .shop{
+        display: inline-block;
+    }
+    .shop-content{
+        display: block;
+        flex-direction: column;
+    }
+    .produkts-preview .preview img{
+        height: 200px;
+    }
+    .produkt-title{
+        font-size: 16px;
+    }
+    /*passwort*/
+    .pwd-text{
+        margin-bottom: 50px;
+    }
+    .pwd-email{
+        margin-top: 20px;
+    }
+    .pwd-sub{
+        margin-top: 10px;
+    }
+    footer .container{
+        display: block;
+        margin: 15px;
+        font-size: 25px;
+    }
+    .container ul li a {
+        font-size: 25px;
+    }
+    footer .socials{
+        font-size: 25px;
+    }
+    .inhalt{
+        display: flex;
+        flex-direction: column;
+    }
+    .inhalt .product-img{
+        width:50%;
+        height: auto;
+    }
+}

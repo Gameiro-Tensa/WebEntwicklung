@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <title>TeamShape - Loginpage - Werde jetzt Teil des TEAMShape</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Tibo Inshape, Fitness, Login, Account">
+    <meta name="description" content="Tibo Inshape | Loginpage | Mach dich fit fürs Gym | Fitness und Sport">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome fuer ein paar icons(socials medien)-->
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <!-- Link fuer icon wie brief und schlüssel-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link fuer icon wie warenkorb-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <nav>
+            <div class="logo"><a href="index.html">Team<span class="log">S</span>hape</a></div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="frau.html">Frauen</a></li>
+                <li><a href="mann.html">Männer</a></li>
+                <li><a href="login.html" class="einlog">Einloggen</a></li>
+            </ul>
+
+            <label for="check" class="bar">
+                <span class="fa fa-bars" id="bars"></span>
+                <span class="fa fa-times" id="times"></span>
+            </label>
+            <div class="korb">
+                <a href="warenkorb.html"><i class='bx bx-shopping-bag' id="korb-icon"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="login-section">
+        <div class="login-container">
+            <input type="checkbox" id="flip">
+            <div class="cover">
+                <div class="front">
+                    <img src="image/t-shirt-homme-bleu-clair-fitness.jpg" alt="hellblau mann t-shirt fuer fitness">
+                </div>
+            </div>
+            <form action="#">
+                <div class="form-content">
+                    <div class="login-form">
+                        <h2 class="title">Anmelden</h2>
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="Geben Sie ihre Email ein" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="password eingeben" required>
+                                <span class="eye">
+                                    <i class="hide1 fa fa-eye"></i>
+                                    <i class="hide2 fa fa-eye-slash"></i>
+                                </span>
+                            </div>
+                            <div class="text"><a href="passwort.html">password vergessen?</a></div>
+                            <div class="button input-box">
+                                <input type="submit" value="anmelden">
+                            </div>
+                            <div class="text">Habt ihr kein Konto? <label for="flip">Jetzt erstellen</label></div>
+                        </div>
+                    </div>
+
+                    <div class="signup-form">
+                        <h2 class="title">Registrieren</h2>
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Geben Sie ihre Name ein" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="Geben Sie ihre Email ein" required>
+                            </div>
+                            <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="password eingeben" required>
+                                <span class="eye">
+                                    <i class="hide1 fa fa-eye"></i>
+                                    <i class="hide2 fa fa-eye-slash"></i>
+                                </span>
+                            </div>
+                            <div class="button input-box">
+                                <input type="submit" value="erstellen">
+                            </div>
+                            <div class="text">Habt ihr schon ein Konto? <label for="flip">Jetzt anmelden</label></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h4>social medien</h4>
+                <ul class="socials">
+                    <li><a href="https://fr-fr.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://accounts.google.com/ServiceLogin"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://de.linkedin.com/company/login"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-info">
+                <h4>Contacts & Information</h4>
+                <ul>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="info.html">Information</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

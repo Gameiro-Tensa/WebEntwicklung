@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+    <title>TeamShape - Tibo Inshape - News, Videos, Bilder und mehr</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Tibo Inshape, Fitness, Bilder, Neuigkeiten, Videos ">
+    <meta name="description"
+        content="Tibo Inshape News | Erfahre alles über einen der beliebtesten französischen Youtuber | Fitness und Sport">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Link fuer Icon des  Social-medias -->
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    <!-- Linkfuer icon wie das Kreuz zum Entfernen des Warenkorb-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <nav>
+            <div class="logo"><a href="index.html">Team<span class="log">S</span>hape</a></div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="frau.html">Frauen</a></li>
+                <li><a href="mann.html">Männer</a></li>
+                <li><a href="login.html" class="einlog">Einloggen</a></li>
+            </ul>
+
+            <label for="check" class="bar">
+                <span class="fa fa-bars" id="bars"></span>
+                <span class="fa fa-times" id="times"></span>
+            </label>
+            <div class="korb">
+                <a href="warenkorb.html"><i class='bx bx-shopping-bag' id="korb-icon"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="info">
+        <h2 class="tibo-title">Ein paar Information Bilder und video über Inshape</h2>
+        <div class="imp">
+            <div class="slider">
+                <div class="tibo-images">
+                    <input type="radio" name="slide" id="img1">
+                    <input type="radio" name="slide" id="img2">
+                    <input type="radio" name="slide" id="img3">
+                    <input type="radio" name="slide" id="img4">
+
+                    <img src="image/veste-de-survetement-homme-teamshape.jpg" class="m1"
+                        alt="EIn Bild von der Influencer Tibo Inshape">
+                    <img src="image/t-shirt-homme-bleu-clair-fitness.jpg" class="m2"
+                        alt="EIn Bild von der Influencer Tibo Inshape mit Sportmaterial">
+                    <img src="image/t-shirt-homme-stone-fitness.jpg" class="m3"
+                        alt="EIn Bild von der Influencer Tibo Inshape">
+                    <img src="image/t-shirt-vous-etes-les-meilleurs-.jpg" class="m4"
+                        alt="EIn Bild von der Influencer Tibo Inshape">
+                </div>
+                <div class="dots">
+                    <label for="img1"></label>
+                    <label for="img2"></label>
+                    <label for="img3"></label>
+                    <label for="img4"></label>
+                </div>
+            </div>
+            <div class="video">
+                <video controls autoplay muted>
+                    <source src="video/VideoEditor_20220627_045928.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="bio">
+            <p> Tibo Inshape ist Influencer und youtuber, wohnt in Frankreich
+                und er macht Videos über Sport, Fitness und Training</p>
+            
+            <br>
+            
+            <p>As a student at Toulouse Business School, Thibaud Delapart started publishing bodybuilding videos on the
+                YouTube platform under the pseudonym Tibo InShape during his final year of study. His audience
+                exploded when he added humor to his bodybuilding and nutrition advice. He has built his renown thanks
+                to social media and quickly got millions of subscribers, turning him into a sports star. His
+                colloquial expressions such as "Daaamn!" at the beginning of his videos or "énorme et sec" (which means,
+                huge and ripped) have become familiar YouTube-related expressions. In 2015, his success on the
+                internet allowed him to launch an online clothing brand.
+
+                He made most of his early videos in his room with a friend, but his fame now enables him to film in
+                different places and to organize meetings with several personalities such as Christophe Lemaitre, Maïva
+                Hamadouche or Esteban Ocon. In December 2017, the program Quotidien named him "Youtuber of the year
+                2017". His videos were then receiving an average of a million views each.</p>
+                
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h4>social medien</h4>
+                <ul class="socials">
+                    <li><a href="https://fr-fr.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/accounts/login/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://accounts.google.com/ServiceLogin"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://de.linkedin.com/company/login"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <h4>Contacts & Information</h4>
+                <ul>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="info.html">Information</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="korb.js"></script>
+</body>
+
+</html>
